@@ -22,9 +22,7 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        usernameTextField.text = "shilena91"
-        
+                
         view.backgroundColor = .systemBackground
         
         view.addSubViews(logoImageView, usernameTextField, callToActionButton)
@@ -39,7 +37,6 @@ class SearchVC: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: true)
-        
     }
 
     
