@@ -15,6 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+		
+		#if LOCAL
+			print("Local development build")
+		#elseif DEV
+			print("Dev build")
+		#elseif QA
+			print("QA build")
+		#elseif PROD
+			print("Production build")
+		#endif
+		
         return true
     }
 
