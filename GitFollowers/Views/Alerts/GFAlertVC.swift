@@ -10,16 +10,16 @@ import UIKit
 
 class GFAlertVC: UIViewController {
     
-    let containerView   = GFAlertContainerView()
-    let titleLabel      = GFTitleLabel(textAlignment: .center, fontSize: 20)
-    let messageLabel    = GFBodyLabel(textAlignment: .center)
-    let actionButton    = GFButton(backgroundColor: .systemPink, title: "OK")
+    private let containerView   = GFAlertContainerView()
+    private let titleLabel      = GFTitleLabel(textAlignment: .center, fontSize: 20)
+    private let messageLabel    = GFBodyLabel(textAlignment: .center)
+    private let actionButton    = GFButton(backgroundColor: .systemPink, title: "OK")
     
-    var alertTitle: String
-    var message: String
-    var buttonTitle: String
+    private var alertTitle: String
+    private var message: String
+    private var buttonTitle: String
     
-    let padding: CGFloat = 20
+    private let padding: CGFloat = 20
     
     
     init(title: String, message: String, buttonTitle: String) {
@@ -59,7 +59,6 @@ class GFAlertVC: UIViewController {
     
     
     private func configureTitleLabel() {
-        
         titleLabel.text = alertTitle
         
         NSLayoutConstraint.activate([
@@ -72,7 +71,6 @@ class GFAlertVC: UIViewController {
     
     
     private func configureActionButton() {
-        
         actionButton.setTitle(buttonTitle, for: .normal)
         actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
@@ -86,7 +84,6 @@ class GFAlertVC: UIViewController {
     
     
     private func configureMessageLabel() {
-        
         messageLabel.text = message
         messageLabel.numberOfLines = 4
         

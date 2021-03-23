@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6110A4422477DAE800D2AD8D"
-               BuildableName = "GitFollowers.app"
+               BuildableName = "GitFollowers Dev Release.app"
                BlueprintName = "GitFollowers"
                ReferencedContainer = "container:GitFollowers.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6110A4422477DAE800D2AD8D"
-            BuildableName = "GitFollowers.app"
+            BuildableName = "GitFollowers Dev Release.app"
             BlueprintName = "GitFollowers"
             ReferencedContainer = "container:GitFollowers.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6110A4422477DAE800D2AD8D"
-            BuildableName = "GitFollowers.app"
+            BuildableName = "GitFollowers Dev Release.app"
             BlueprintName = "GitFollowers"
             ReferencedContainer = "container:GitFollowers.xcodeproj">
          </BuildableReference>

@@ -1,4 +1,4 @@
-//
+ //
 //  NetworkManager.swift
 //  GitFollowers
 //
@@ -17,7 +17,6 @@ class NetworkManager {
 //    private init() {}
     
     func getFollower(for username: String, page: Int, completionHandler: @escaping (Result<[Follower], GFError>) -> Void) {
-        
         let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(page)"
                 
         guard let url = URL(string: endpoint) else {
@@ -57,7 +56,6 @@ class NetworkManager {
     
     
     func getUserInfo(for username: String, completionHandler: @escaping (Result<User, GFError>) -> Void) {
-        
         let endpoint = baseURL + "\(username)"
                 
         guard let url = URL(string: endpoint) else {
@@ -98,7 +96,6 @@ class NetworkManager {
     
     
     func downloadImage(from urlString: String, completionHandler: @escaping (UIImage?) -> Void) {
-        
         let cacheKey = NSString(string: urlString)
         
         if let image = cache.object(forKey: cacheKey) {

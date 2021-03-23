@@ -45,7 +45,6 @@ class FavoritesListVC: GFDataLoadingVC {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(FavoritesCell.self, forCellReuseIdentifier: FavoritesCell.reuseId)
-        
     }
 
     
@@ -58,7 +57,7 @@ class FavoritesListVC: GFDataLoadingVC {
                 self.updateUI(with: favorites)
                 
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something went wring", message: error.rawValue, buttonTitle: "OK")
+                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
             }
         }
     }

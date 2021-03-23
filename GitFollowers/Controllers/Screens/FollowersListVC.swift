@@ -84,7 +84,6 @@ class FollowersListVC: GFDataLoadingVC {
     
     
     private func getFollower(username: String, page: Int) {
-        
         showLoadingView()
         isLoadingMoreFollower = true
         
